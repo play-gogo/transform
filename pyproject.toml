@@ -1,17 +1,18 @@
 [project]
 name = "transform"
-version = "0.1.0"
+version = "0.2.0"
 description = "Default template for PDM package"
 authors = [
     {name = "sunwoo", email = "summerham22@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+]
 requires-python = ">=3.9"
 readme = "README.md"
 license = {text = "MIT"}
 
 [project.scripts]
-call_trans = 'transform.trans:ice_breaking'
+call_trans = 'transform.trans:ice_sunwoo'
 
 [tool.pdm]
 distribution = true
