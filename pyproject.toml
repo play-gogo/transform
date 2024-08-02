@@ -6,6 +6,7 @@ authors = [
     {name = "sunwoo", email = "summerham22@gmail.com"},
 ]
 dependencies = [
+    "Load @ git+https://github.com/play-gogo/Load.git@ice",
 ]
 requires-python = ">=3.9"
 readme = "README.md"

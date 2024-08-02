@@ -1,3 +1,5 @@
+from load.cli import ice_sj
+
 def ice_sunwoo():
     p="""
     .........::.........
@@ -12,5 +14,7 @@ def ice_sunwoo():
     .........+..........
     ....................
     """
+    ice_sj()
+
     print(p)
 
