@@ -24,10 +24,8 @@ def transform(load_dt):
     df['month'] = pd.to_datetime(df['load_dt']).dt.month
     df[['rank', 'showCnt', 'audiCnt', 'salesAmt', 'audiAcc', 'salesAcc', 'salesShare']] = df[['rank', 'showCnt', 'audiCnt', 'salesAmt', 'audiAcc', 'salesAcc', 'salesShare']].astype(float).astype(int)
     df = df.sort_values(by='audiCnt', ascending=False)
-    print(df)
     return df
 
-transform('20200101')
 
 
 
