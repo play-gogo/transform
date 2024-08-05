@@ -20,8 +20,8 @@ def transform(load_dt='20200101'):
     df = read_df[cols]
     
     #데이터타입 변환 
-    df['load_dt'] = pd.to_datetime(df['load_dt'])
-    df['month'] = df['load_dt'].dt.month
+    #df['load_dt'] = pd.to_datetime(df['load_dt'])
+    df['month'] = pd.to_datetime(df['load_dt']).dt.month
     df[['rank', 'showCnt', 'audiCnt', 'salesAmt', 'audiAcc', 'salesAcc', 'salesShare']] = df[['rank', 'showCnt', 'audiCnt', 'salesAmt', 'audiAcc', 'salesAcc', 'salesShare']].astype(float).astype(int)
     df = df.sort_values(by='audiCnt', ascending=False)
     print(df)
