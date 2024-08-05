@@ -1,8 +1,8 @@
 from extrct.mov import list2df
 import pandas as pd
 
-def transform(load_dt='20200101'):
-    read_df = list2df()
+def transform(load_dt):
+    read_df = list2df(load_dt=load_dt)
     
     cols = ['movieCd', #영화의 대표코드를 출력합니다.
             'movieNm', #영화명(국문)을 출력합니다.
@@ -27,7 +27,7 @@ def transform(load_dt='20200101'):
     print(df)
     return df
 
-transform()
+transform('20200101')
 
 
 
