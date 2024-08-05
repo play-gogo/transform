@@ -9,7 +9,7 @@ pip install git+https://github.com/play-gogo/transform.git@dev/d1.0.0
 
 ## pdm 가상환경에서 설치방법
 ```python
-pdm install git+https://github.com/play-gogo/transform.git@dev/d1.0.0
+pdm add git+https://github.com/play-gogo/transform.git@dev/d1.0.0
 ```
 
 ## 호출방법
