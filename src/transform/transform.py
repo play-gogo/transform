@@ -23,7 +23,7 @@ def transform(load_dt='20200101'):
     df['load_dt'] = df['load_dt'].astype('object')
     df[['rank', 'showCnt', 'audiCnt', 'salesAmt', 'audiAcc', 'salesAcc', 'salesShare']] = df[['rank', 'showCnt', 'audiCnt', 'salesAmt', 'audiAcc', 'salesAcc', 'salesShare']].astype(float).astype(int)
     df = df.sort_values(by='audiCnt', ascending=False)
-    print(df['audiCnt'])
+    print(df)
     return df
 
 transform()
