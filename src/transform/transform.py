@@ -25,7 +25,3 @@ def transform(load_dt):
     df[['rank', 'showCnt', 'audiCnt', 'salesAmt', 'audiAcc', 'salesAcc', 'salesShare']] = df[['rank', 'showCnt', 'audiCnt', 'salesAmt', 'audiAcc', 'salesAcc', 'salesShare']].astype(float).astype(int)
     df = df.sort_values(by='audiCnt', ascending=False)
     return df
-
-
-
-
